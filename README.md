@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+Feedback App
+A React-based feedback app that allows users to submit feedback on services, providing a simple and intuitive user experience. This app showcases how modern frontend frameworks can handle real-time updates and state management effectively.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
+User Feedback Form:
+•	A form where users can submit their feedback along with a star rating.
+•	Optional fields for the user's name and email for follow-up communication.
+•	Validations to ensure feedback and rating are provided.
+Real-Time Feedback Display:
+•	Newly submitted feedback is displayed instantly without page refresh.
+•	The list shows feedback comments, user ratings, and optional user name.
+•	Feedback is sortable by recent submissions or highest rating.
+Rating System:
+•	A rating component allows users to rate the service from 1 to 10.
+State Management:
+•	State management with useState or useReducer to handle feedback data and form inputs.
+•	Uses useEffect for loading and updating feedback from external sources (e.g., a backend or local storage).
+Backend Integration:
+•	API integration using Fetch API for sending feedback to a server.
+•	Retrieves and displays feedback stored on the updated API.
+Error Handling:
+•	Displays error messages if the feedback fails to submit.
+•	Show success notifications when feedback is submitted successfully using libraries like react-toastify.
 
-## Available Scripts
+Components
+FeedbackForm Component:
+•	Handles user inputs, validation, and submission.
+•	Updates the global state upon submission.
+FeedbackList Component:
+•	Renders a list of feedback received from users.
+•	Dynamically updates as new feedback is submitted.
+Rating Component:
+•	A reusable component for selecting, displaying and calculating the average ratings.
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Technology Stack
+•	React: For building the user interface.
+•	State Management: useState , useReducer and useContext for managing the feedback form and list.
+•	Backend Integration: integrated by using Fetch API for API calls.
+•	Styling: Styled with CSS.
