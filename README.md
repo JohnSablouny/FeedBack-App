@@ -2,6 +2,7 @@ Feedback App
 
 A React-based feedback app that allows users to submit feedback on services, providing a simple and intuitive user experience. This app showcases how modern frontend frameworks can handle real-time updates and state management effectively.
 
+
 Features
 
 User Feedback Form:
@@ -42,6 +43,7 @@ Error Handling:
 
 •	Show success notifications when feedback is submitted successfully using libraries like react-toastify.
 
+
 Components
 
 FeedbackForm Component:
@@ -59,6 +61,7 @@ FeedbackList Component:
 Rating Component:
 
 •	A reusable component for selecting, displaying and calculating the average ratings.
+
 
 Technology Stack
 
